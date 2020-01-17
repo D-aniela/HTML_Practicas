@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios (inputs)</h1>
+    <!-- form es la etiqueta para representar formularios -->
+    <form>
+
+        <!-- type="text" -->
+
+        <!-- placeholder es ayuda para el usuario y no afecta el contenido
+            del input y value afecta directamente al input -->
+        <label for="nombre">Nombre : </label><input id="nombre" 
+            placeholder="Daniela Estrada" type="text" required>
+        <label for="Apellido">Apellido :</label><input id="Apellido" 
+            type="text" minlength="3" maxlength="5">
+        <!-- minlength es la longitud que queremos darle al igual que maxlength-->
+        <br><br>
+        <label for="Correo">Correo: </label><input id="Correo" type="email">
+        <label for="pss">Password: </label><input  id="pss" type="password">
+        <label for="telefono">Telefono: </label><input id="telefono" type="number"
+            min="0" max="10">
+        
+        <br>
+
+        <h2>Selecciona una opción</h2>
+
+        <input type="radio" name="sexo" id="" value="Masculino">Masculino
+        <input type="radio" name="sexo" checked id="" value="Femenino">Femenino
+
+        <br>
+        <input checked type="checkbox" value="opción1">opción1
+        <input type="checkbox" value="opción2">opción2
+        <input type="checkbox" value="opción3">opción3
+        <input type="checkbox" value="opción4">opción4
+        <br>
+
+        <label for="date">Seleccione una fecha: </label><input type="date" 
+        min="2020-01-01" max="2020-12-31" value="2020-01-17">
+        <label for="">Seleccione un mes: </label><input min="2020-01" 
+        max="2020-12" type="month">
+        <br>
+
+        <label for="">Selecciona un color: </label><input type="color">
+        <br>
+        <label for="">Rango: </label><input type="range">
+        <br>
+        <label for="">Selecciona una opción</label>
+        
+        <select disabled name="" id="">
+            <option value="">--Selecciona--</option>
+            <option value="ch">CH</option>
+            <option value="m">M</option>
+            <option value="g">G</option>
+            <option value="eg">EG</option>
+        </select>
+        
+        <br>
+
+        <input hidden type="submit" value="Probar formulario">
+    
+    </form>
+
+</body>
+
+</html>
